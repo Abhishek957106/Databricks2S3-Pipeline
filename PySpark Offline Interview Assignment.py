@@ -14,9 +14,9 @@ spark = SparkSession.builder \
     .getOrCreate()
 
 # Configure AWS S3 Access
-spark._jsc.hadoopConfiguration().set("fs.s3a.access.key", "AKIA4CLY4WOVEXQWDD7Y")
-spark._jsc.hadoopConfiguration().set("fs.s3a.secret.key", "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")
-spark._jsc.hadoopConfiguration().set("fs.s3a.endpoint", "s3.amazonaws.com")
+spark._jsc.hadoopConfiguration().set("fs.s3a.access.key", "<YOUR_ACCESS_KEY>")
+spark._jsc.hadoopConfiguration().set("fs.s3a.secret.key", "<YOUR_SECRET_KEY>")
+spark._jsc.hadoopConfiguration().set("fs.s3a.endpoint", "<YOUR_S3_ENDPOINT>")
 
 # Configuration
 TRANSACTIONS_FILE = "/FileStore/AssignmentFile/transactions.csv"
